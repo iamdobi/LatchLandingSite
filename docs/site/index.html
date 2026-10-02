@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Latch</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="lang"><a href="ko/index.html">한국어</a></nav>
+
+<header>
+  <h1>Latch — Private Gallery</h1>
+  <p>Support and frequently asked questions</p>
+</header>
+
+<p>
+  Latch keeps photos and videos in a passcode-protected library that lives only
+  on your device, separate from the Photos app. It has no account, no cloud, and
+  no server: nothing you put in it leaves your iPhone or iPad unless you export
+  it yourself.
+</p>
+
+<h2>Getting started</h2>
+
+<ul>
+  <li>On first launch, Latch asks you to choose a numeric passcode of 4 to 12
+      digits. This passcode is the only way in — see the warning below.</li>
+  <li>Tap <strong>Import</strong> to copy photos and videos from your photo
+      library into Latch. Originals stay in Photos; delete them there yourself if
+      you want them only in Latch.</li>
+  <li>Organise items into folders and tags, and mark favourites.</li>
+  <li><strong>Deleting an item in Latch is immediate and permanent.</strong>
+      There is no trash and no undo, and because the library is not backed up
+      (see below) there is no copy to restore from. Latch asks you to confirm
+      before deleting for this reason.</li>
+</ul>
+
+<div class="note warn">
+  <strong>Two things to understand before you rely on Latch</strong>
+  <p>
+    <strong>1. A forgotten passcode cannot be recovered.</strong> There is no
+    reset, no email link, and no support override. Latch has no server and no
+    account, so there is nobody who holds a spare key.
+  </p>
+  <p>
+    <strong>2. Your library is not backed up.</strong> Latch's storage is
+    deliberately excluded from iCloud and iTunes/Finder backups so that your
+    private library is not copied elsewhere. The cost is that deleting the app,
+    erasing the device, or switching to a new device destroys everything in it
+    permanently. Export anything you cannot afford to lose.
+  </p>
+</div>
+
+<h2>Free and Pro</h2>
+
+<p>
+  Latch is free to use, with no time limit. The free version includes the
+  passcode lock, Face ID unlock, the full viewer, folders, tags, favourites,
+  metadata, duplicate detection, and exporting one original item at a time. It
+  holds up to <strong>100 items, 3 folders, and 5 tags</strong>.
+</p>
+
+<p>
+  A single one-time purchase unlocks Latch Pro: unlimited items, folders and
+  tags, the local web server, multi-select bulk actions, image conversion
+  (resize and JPEG), export with EXIF metadata removed, and the storage
+  dashboard. There is no subscription and no recurring charge.
+</p>
+
+<div class="note">
+  <strong>Reaching a free limit never locks you out of your own data</strong>
+  If you hit the 100-item limit, everything already in Latch stays fully
+  viewable and exportable. The limit only stops new imports.
+</div>
+
+<h2>Frequently asked questions</h2>
+
+<dl>
+  <dt>I forgot my passcode. What can I do?</dt>
+  <dd>
+    Nothing can unlock the library, and that is by design rather than an
+    oversight. The passcode is stored only as a salted hash, there is no server
+    to authenticate against, and the developer has no override. The only way to
+    use the app again is to delete and reinstall it, which erases its contents.
+  </dd>
+
+  <dt>Where are my photos? I can't find them in the Files app.</dt>
+  <dd>
+    They are inside Latch's private storage area, which iOS hides from other
+    apps and from the Files app. That isolation is the point of the app. Use
+    Latch's export features to get a copy out.
+  </dd>
+
+  <dt>How do I make a backup?</dt>
+  <dd>
+    Use <strong>Export</strong> to send items to the Photos app or Files, or turn
+    on the web server and download them to a computer. iCloud Backup will not
+    include them. If you are about to change devices, export first — there is no
+    migration path otherwise.
+  </dd>
+
+  <dt>Does Latch change or recompress my files?</dt>
+  <dd>
+    No. Imports are stored byte-for-byte as received. Pixels and metadata are
+    only ever modified by the two features you run on purpose: image conversion,
+    and export with EXIF removed. Exporting an original gives you the original
+    bytes.
+  </dd>
+
+  <dt>How do I use the web server?</dt>
+  <dd>
+    Open the <strong>Web Server</strong> tab and turn it on. The app shows an
+    address such as <code>http://192.168.0.12:8080</code> along with a username
+    and password. Type that address into a browser on a computer joined to the
+    <strong>same Wi-Fi network</strong>, and sign in with the credentials shown.
+    From there you can browse, upload, download, and run bulk actions.
+  </dd>
+
+  <dt>The web address doesn't load.</dt>
+  <dd>
+    Check, in order: that Latch is open on screen (the server stops as soon as
+    the app goes to the background — iOS does not allow it to keep running);
+    that both devices are on the same Wi-Fi network and not on a guest network
+    that isolates clients; and that you allowed local network access when iOS
+    asked. If you declined, re-enable it in
+    <strong>Settings &gt; Latch &gt; Local Network</strong>.
+  </dd>
+
+  <dt>I bought Pro but a feature is still locked.</dt>
+  <dd>
+    Open <strong>Settings</strong> in the app and tap <strong>Restore
+    Purchases</strong>. Make sure you are signed in with the same Apple Account
+    that made the purchase. Because Latch is a one-time purchase, restoring works
+    on every device using that account.
+  </dd>
+
+  <dt>Can I use Latch on iPad?</dt>
+  <dd>
+    Yes. It runs on iPhone and iPad. The library is per-device, though: there is
+    no syncing between them, because syncing would require sending your media
+    through a server.
+  </dd>
+
+  <dt>Is my library encrypted?</dt>
+  <dd>
+    Latch relies on iOS's own protections: its storage is in the app sandbox,
+    which other apps cannot read, and the device's own encryption applies while
+    the device is locked. Latch does not add a separate layer of its own
+    encryption on top of that, and the app never claims to.
+  </dd>
+
+  <dt>Do you collect any data about me?</dt>
+  <dd>
+    No. See the <a href="privacy.html">privacy policy</a>. There is no analytics,
+    no advertising, no tracking, and no network connection to the developer.
+  </dd>
+
+  <dt>How do I get a refund?</dt>
+  <dd>
+    Refunds for App Store purchases are handled by Apple, not by the developer.
+    Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
+  </dd>
+</dl>
+
+<h2>Contact</h2>
+
+<p>
+  Bug reports, questions, and feature requests are welcome:
+  <a href="mailto:kyh0909@gmail.com">kyh0909@gmail.com</a>
+</p>
+
+<p>
+  Please include your iOS version and device model. Never include your passcode —
+  it is not useful to anyone, including the developer.
+</p>
+
+<footer>
+  <p><a href="privacy.html">Privacy Policy</a> · <a href="ko/index.html">한국어</a></p>
+</footer>
+
+</body>
+</html>

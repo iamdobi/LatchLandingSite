@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Latch</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="lang"><a href="ko/privacy.html">한국어</a></nav>
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p>Latch — Private Gallery · Last updated 1 October 2026</p>
+</header>
+
+<p>
+  Latch is a private photo and video library that runs entirely on your device.
+  This policy describes what the app does with your information. It is short
+  because the answer is, in almost every case, nothing.
+</p>
+
+<div class="note">
+  <strong>Summary</strong>
+  Latch collects no personal data. There are no accounts, no analytics, no
+  advertising, no tracking, and no third-party services that receive information
+  about you. Your photos and videos are stored only inside the app on your own
+  device, and are never uploaded anywhere by the app.
+</div>
+
+<h2>Information we collect</h2>
+
+<p>
+  None. The developer of Latch receives no information about you or your use of
+  the app. Specifically, the app contains no analytics framework, no crash
+  reporting service, no advertising identifier, no social login, and no
+  networking code that contacts a server operated by the developer.
+</p>
+
+<h2>Your photos and videos</h2>
+
+<p>
+  Media you import is copied into the app's own private storage area (the iOS
+  application sandbox), which other apps cannot read. Imported files are stored
+  byte-for-byte as received — the app does not re-encode them.
+</p>
+
+<p>
+  This storage is marked as excluded from iCloud and iTunes/Finder device
+  backups. That is a deliberate privacy choice: it means your private library is
+  not copied into a backup that may be stored elsewhere. It has an important
+  consequence, described in the warning below.
+</p>
+
+<div class="note warn">
+  <strong>Your library is not backed up</strong>
+  Because the app's storage is excluded from backups, deleting Latch, erasing
+  your device, or moving to a new device will <strong>permanently destroy</strong>
+  everything stored in the app. There is no copy anywhere else, and the
+  developer cannot recover it. Use the app's export features to keep copies of
+  anything you cannot afford to lose.
+</div>
+
+<h2>Your passcode</h2>
+
+<p>
+  Latch protects its library with a numeric passcode that you choose. The
+  passcode itself is never stored. The app stores only a salted cryptographic
+  hash of it in the iOS Keychain, and compares later entries against that hash.
+</p>
+
+<p>
+  There is no recovery mechanism, no reset link, and no backdoor. If you forget
+  your passcode, neither you nor the developer can unlock the library. This is a
+  consequence of the app having no server and no account: there is nobody to ask.
+</p>
+
+<h3>Face ID and Touch ID</h3>
+
+<p>
+  If you enable biometric unlock, authentication is performed by iOS itself. The
+  app asks the system whether authentication succeeded and receives only a yes or
+  no. Your fingerprint and face data never reach the app, and cannot — iOS does
+  not expose them to apps.
+</p>
+
+<h3>Optional automatic deletion</h3>
+
+<p>
+  Latch offers a setting, <strong>off by default</strong>, that erases all data
+  in the app after a number of consecutive incorrect passcode entries. It only
+  ever takes effect if you turn it on yourself. When it does, the deletion is
+  immediate and permanent.
+</p>
+
+<h2>System permissions the app asks for</h2>
+
+<dl>
+  <dt>Photo library</dt>
+  <dd>
+    Read access is used only to copy the specific items you select into the app.
+    The app does not browse or index your photo library on its own. Write access
+    is requested only at the moment you explicitly export an item back to the
+    Photos app.
+  </dd>
+
+  <dt>Local network</dt>
+  <dd>
+    Used only by the optional web server feature described below. The app does
+    not scan your network or discover other devices.
+  </dd>
+
+  <dt>Face ID</dt>
+  <dd>Used only to unlock the app, and only if you enable it.</dd>
+</dl>
+
+<p>
+  If you decline any of these, the rest of the app continues to work; only the
+  feature that needs the permission is unavailable.
+</p>
+
+<h2>The local web server</h2>
+
+<p>
+  Latch includes an optional server that lets you browse and transfer your
+  library from a computer on the same Wi-Fi network. When you turn it on:
+</p>
+
+<ul>
+  <li>It listens only on your local network. It is not reachable from the
+      internet, and the app does not configure port forwarding or any relay.</li>
+  <li>It requires a username and password that the app shows you, and it limits
+      repeated failed sign-in attempts.</li>
+  <li>It runs only while Latch is open on screen. Switching apps or locking the
+      device stops it.</li>
+  <li>Nothing is sent to the developer or to any third party. The only parties
+      involved are your device and the computer you connect from.</li>
+</ul>
+
+<p>
+  Traffic on your local network is not encrypted in transit. On a home or
+  personal network this is comparable to any other device-to-device transfer,
+  but you should not enable the server on a public or untrusted Wi-Fi network.
+</p>
+
+<h2>Purchases</h2>
+
+<p>
+  Latch offers a one-time in-app purchase that unlocks additional features. The
+  purchase is processed entirely by Apple. The developer never sees your payment
+  details, your Apple Account, or your name. The app checks whether a purchase
+  exists using Apple's on-device receipt verification; no purchase information is
+  sent to the developer or to any other server.
+</p>
+
+<h2>Children</h2>
+
+<p>
+  Latch is not directed at children and collects no data from anyone, including
+  children.
+</p>
+
+<h2>Third-party code</h2>
+
+<p>
+  The app includes the open-source <a href="https://github.com/swhitty/FlyingFox">FlyingFox</a>
+  HTTP server library (MIT licence), which runs locally on your device as part of
+  the web server feature. It is a software component, not a service: it sends no
+  data anywhere and its authors receive nothing about you.
+</p>
+
+<h2>Changes to this policy</h2>
+
+<p>
+  If this policy changes, the updated version will be published at this address
+  with a new date at the top. Because the app collects nothing, any change is
+  expected to be a clarification rather than a change in practice.
+</p>
+
+<h2>Contact</h2>
+
+<p>
+  Questions about this policy or about the app:
+  <a href="mailto:kyh0909@gmail.com">kyh0909@gmail.com</a>
+</p>
+
+<footer>
+  <p><a href="index.html">Support &amp; FAQ</a> · <a href="ko/privacy.html">한국어</a></p>
+</footer>
+
+</body>
+</html>
